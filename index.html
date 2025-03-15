@@ -1,0 +1,492 @@
+<html>
+ <head>
+  <title>
+   Akshat's Portfolio
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .timeline {
+            position: relative;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: #fff;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
+        .timeline-item {
+            padding: 10px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+        }
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            right: -17px;
+            background-color: #fff;
+            border: 4px solid #FF9F55;
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+        .left {
+            left: 0;
+        }
+        .right {
+            left: 50%;
+        }
+        .left::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            right: 30px;
+            border: medium solid white;
+            border-width: 10px 0 10px 10px;
+            border-color: transparent transparent transparent white;
+        }
+        .right::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            left: 30px;
+            border: medium solid white;
+            border-width: 10px 10px 10px 0;
+            border-color: transparent white transparent transparent;
+        }
+        .right::after {
+            left: -16px;
+        }
+        .content {
+            padding: 20px 30px;
+            background-color: white;
+            position: relative;
+            border-radius: 6px;
+        }
+  </style>
+ </head>
+ <body class="bg-blue-600 text-white">
+  <header class="flex justify-end items-center p-6">
+  </header>
+  <main class="flex flex-col md:flex-row items-center justify-center min-h-screen p-6">
+     <div class="text-center md:text-left md:w-1/2 md:pr-8">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">
+       Hello
+       <span class="wave">
+        👋
+       </span>
+       I'm
+       <span class="text-yellow-400">
+        Akshat
+       </span>
+       ,
+      </h1>
+      <p class="text-lg md:text-xl mb-6">
+       A <span class="text-yellow-400">Product Manager</span> who loves building products that make life easier. Whether it’s designing 
+       <span class="text-yellow-400">seamless user experiences</span>, optimizing 
+       <span class="text-yellow-400">cloud solutions</span>, or turning ideas into real, working products, I thrive at the intersection of 
+       <span class="text-yellow-400">tech</span>, 
+       <span class="text-yellow-400">marketing</span>, and 
+       <span class="text-yellow-400">Product management</span>.
+       <br/><br/>
+       With a 
+       <span class="text-yellow-400">Master’s in Marketing Management</span> (Esade, Barcelona) and a 
+       <span class="text-yellow-400">Bachelor’s in Computer Science</span> (Anna University), I bring both the technical know-how and a deep understanding of what makes products successful in the real world. Add to that my 
+       <span class="text-yellow-400">AWS Cloud Certification</span>, and you’ve got someone who’s always thinking about 
+       <span class="text-yellow-400">scalability</span>, 
+       <span class="text-yellow-400">efficiency</span>, and 
+       <span class="text-yellow-400">innovation</span>.
+      </p>
+      <div class="flex justify-center md:justify-start space-x-4">
+       <a class="text-2xl" href="https://www.linkedin.com/in/akshat-saxena-462b3b16b/">
+        <i class="fab fa-linkedin"></i>
+       </a>
+       <a class="text-2xl" href="https://www.instagram.com/akshatsaxenaa_?igsh=MWQwOWszYmF6YTg5aQ%3D%3D&utm_source=qr">
+        <i class="fab fa-instagram"></i>
+       </a>
+       <a class="text-2xl" href="#" onclick="showPhoneNumber()">
+        <i class="fas fa-phone"></i>
+       </a>
+       <a class="text-2xl" href="new_resume_Akshat.pdf" target="_blank">
+       <i class="fas fa-file-pdf"></i>
+ </a>
+      </div>
+     </div>
+     <div class="md:w-1/2 mt-6 md:mt-0 flex justify-center md:justify-start">
+      <img alt="Akshat's portrait" class="rounded-full h-65 w-65 object-cover" src="resume.jpg"/>
+     </div>
+  </main>
+  <script>
+    function showPhoneNumber() {
+        alert("My phone number: +4915211258833");
+    }
+</script>
+  <section class="bg-blue-700 text-white p-6">
+     <div class="container mx-auto">
+      <h2 class="text-3xl font-bold mb-4">
+       Key Skills
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+       <div>
+        <h3 class="text-2xl font-semibold mb-2">
+         Product Management Skills
+        </h3>
+        <ul class="list-disc list-inside text-lg">
+            <li>
+                KPI Tracking
+              </li>
+              <li>
+                Agile workflows
+              </li>
+              <li>
+                Product lifecycle management
+              </li>
+              <li>Market & competitive analysis</li>
+              <li>A/B testing</li>
+              <li>Wireframing</li>
+              <li>Product documentation </li>
+        </ul>
+       </div>
+       <div>
+        <h3 class="text-2xl font-semibold mb-2">
+         Technical Skills
+        </h3>
+        <ul class="list-disc list-inside text-lg">
+           <li>Bootstrap</li>
+            <li>
+                API understanding
+              </li>
+              <li>
+               Jira
+              </li>
+              <li>
+               Confluence
+              </li>
+              <li>Figma</li>
+              <li>Python</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>HTML5</li>
+              <li>Microsoft Office</li>
+        </ul>
+       </div>
+       <div>
+        <h3 class="text-2xl font-semibold mb-2">
+         Languages
+        </h3>
+        <ul class="list-disc list-inside text-lg">
+         <li>
+          English (C1) (IELTS 8-Band)
+         </li>
+         <li>
+          German (A1)
+         </li>
+        </ul>
+       </div>
+       <div>
+        <h3 class="text-2xl font-semibold mb-2">
+         Certifications
+        </h3>
+        <ul class="list-disc list-inside text-lg">
+         <li>
+            Applied Business Analytics (ISB Hyderabad)
+         </li>
+         <li>
+            AWS certified cloud practitioner CLF-C02
+         </li>
+        </ul>
+       </div>
+      </div>
+     </div>
+    </section>
+    <section class="bg-blue-700 text-white p-6">
+       <div class="container mx-auto">
+        <h2 class="text-3xl font-bold mb-4">
+         Work Experience
+        </h2>
+        <div class="timeline">
+         <div class="timeline-item left">
+          <div class="content text-blue-600 transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-blue-600 hover:text-white" onmouseover="showDetails(this)" onmouseout="hideDetails(this)">
+           <h3>
+            <b><span class="text-yellow-400">Marketing & Product advisor, </span></b> <b>Brandcollab</b>
+           </h3>
+           <p class="duration">
+            June 2024 - Present
+           </p>
+           <ul class="details hidden list-disc list-inside">
+            <li>
+                Drove product improvements by effectively channeling customer feedback into actionable development strategies.
+            </li>
+            <li>
+                Increased brand awareness by 30% and drove a 25% increase in website traffic.
+
+            </li>
+           </ul>
+          </div>
+         </div>
+         <div class="timeline-item right">
+          <div class="content text-blue-600 transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-blue-600 hover:text-white" onmouseover="showDetails(this)" onmouseout="hideDetails(this)">
+           <h3>
+            <b><span class="text-yellow-400">Associate Product Manager, </span></b> <b>Justbaat AI</b>
+           </h3>
+           <p class="duration">
+            January 2024 - April 2024
+           </p>
+           <ul class="details hidden list-disc list-inside">
+            <li>
+                Bridged the gap between customers and product
+            </li>
+            <li>
+                Streamlined workflows
+            </li>
+            <li>Championed user experience</li>
+            <li>Redesigned the AI video tool</li>
+            <li>Boosted video creation output by 490%</li>
+           </ul>
+          </div>
+         </div>
+         <div class="timeline-item left">
+          <div class="content text-blue-600 transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-blue-600 hover:text-white" onmouseover="showDetails(this)" onmouseout="hideDetails(this)">
+           <h3>
+            <b><span class="text-yellow-400">Marketing Associate, </span></b> <b>Techlabs Barcelona</b>
+           </h3>
+           <p class="duration">
+            August 2022 - August 2023
+           </p>
+           <ul class="details hidden list-disc list-inside">
+            <li>
+                Led social media growth strategy, increasing Instagram followers by ~600%
+            </li>
+            <li>Developed and executed multiple Instagram marketing campaigns</li>
+            <li>Created engaging content strategies to boost online visibility</li>
+           </ul>
+          </div>
+         </div>
+         <div class="timeline-item right">
+          <div class="content text-blue-600 transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-blue-600 hover:text-white" onmouseover="showDetails(this)" onmouseout="hideDetails(this)">
+           <h3>
+            <b><span class="text-yellow-400">Product Manager (Intern), </span></b> <b>Batterysmart</b>
+           </h3>
+           <p class="duration">
+            April 2022 - May 2022
+           </p>
+           <ul class="details hidden list-disc list-inside">
+            <li>
+                Designed and prototyped new features for the driver and partner apps
+            </li>
+            <li>Conducted fraud analysis</li>
+            <li>Developed five Product Requirement Documents for our internal application, JARVIS</li>
+            <li>Owned Confluence & JIRA management</li>
+            <li>Authored five comprehensive Confluence pages, improving cross-team collaboration and knowledge sharing</li>
+           </ul>
+          </div>
+         </div>
+         <div class="timeline-item left">
+          <div class="content text-blue-600 transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-blue-600 hover:text-white" onmouseover="showDetails(this)" onmouseout="hideDetails(this)">
+           <h3>
+            <b><span class="text-yellow-400">Marketing intern, </span></b> <b>Jamboree Education</b>
+           </h3>
+           <p class="duration">
+            October 2021 - November 2021
+           </p>
+           <ul class="details hidden list-disc list-inside">
+            <li>
+                Managed three social media accounts, increasing Instagram engagement by 25% through targeted content strategies.
+            </li>
+            <li>Led outreach efforts, visiting eight educational institutions, resulting in increased student enrollments.</li>
+           </ul>
+          </div>
+         </div>
+         <div class="timeline-item right">
+          <div class="content text-blue-600 transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-blue-600 hover:text-white" onmouseover="showDetails(this)" onmouseout="hideDetails(this)">
+           <h3>
+            <b><span class="text-yellow-400">Manual Developer, </span></b> <b>Zuppler</b>
+           </h3>
+           <p class="duration">
+            June 2020 - August 2020
+           </p>
+           <ul class="details hidden list-disc list-inside">
+            <li>
+                Optimized restaurant onboarding, supporting an average of 150 restaurants per week in implementing online ordering systems.
+            </li>
+            <li>Owned Product Documentation, producing 21 product manuals detailing platform usage</li>
+            <li>Assisted in Google PoSaaS integration</li>
+           </ul>
+          </div>
+         </div>
+        </div>
+       </div>
+      </section>
+    
+    <script>
+        function showDetails(element) {
+            element.querySelector('.duration').classList.add('hidden');
+            element.querySelector('.details').classList.remove('hidden');
+        }
+    
+        function hideDetails(element) {
+            element.querySelector('.details').classList.add('hidden');
+            element.querySelector('.duration').classList.remove('hidden');
+        }
+    </script>
+<section class="bg-blue-600 text-white p-6">
+   <div class="container mx-auto">
+    <h2 class="text-3xl font-bold mb-4">
+     Projects
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+     <div class="bg-white text-black rounded-lg overflow-hidden shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-blue-600 group cursor-pointer" onclick="openModal('modal1')">
+      <div class="relative">
+       <img alt="Project 1 image 1" class="w-full h-64 object-cover" height="400" src="IMG_3314.jpg" width="600"/>
+      </div>
+      <div class="p-4">
+       <h3 class="text-xl font-bold mb-2 text-blue-600 group-hover:text-white">
+        Justbaat AI: AI video tool
+       </h3>
+       <p class="text-blue-600 group-hover:text-white">
+        Redesigned the AI video tool
+       </p>
+      </div>
+     </div>
+     <div class="bg-white text-black rounded-lg overflow-hidden shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-blue-600 group cursor-pointer" onclick="openModal('modal2')">
+      <div class="relative">
+       <img alt="Project 2 image 1" class="w-full h-64 object-cover" height="400" src="p8.jpg" width="600"/>
+      </div>
+      <div class="p-4">
+       <h3 class="text-xl font-bold mb-2 text-blue-600 group-hover:text-white">
+        Justbaat AI: ADX
+       </h3>
+       <p class="text-blue-600 group-hover:text-white">
+        Created an onboarding workflow for the ADX team
+       </p>
+      </div>
+     </div>
+     <div class="bg-white text-black rounded-lg overflow-hidden shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-blue-600 group cursor-pointer" onclick="openModal('modal3')">
+      <div class="relative">
+       <img alt="Project 3 image 1" class="w-full h-64 object-cover" height="400" src="f1.jpg" width="600"/>
+      </div>
+      <div class="p-4">
+       <h3 class="text-xl font-bold mb-2 text-blue-600 group-hover:text-white">
+        Batterysmart: Fraud analysis
+       </h3>
+       <p class="text-blue-600 group-hover:text-white">
+        Brainstormed & Created workflows on how the company was loosing money due to Fraud
+       </p>
+      </div>
+     </div>
+     <div class="bg-white text-black rounded-lg overflow-hidden shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-blue-600 group cursor-pointer" onclick="openModal('modal4')">
+      <div class="relative">
+       <img alt="Project 4 image 1" class="w-full h-64 object-cover" height="400" src="jwire.jpg" width="600"/>
+      </div>
+      <div class="p-4">
+       <h3 class="text-xl font-bold mb-2 text-blue-600 group-hover:text-white">
+        Batterysmart: JARVIS
+       </h3>
+       <p class="text-blue-600 group-hover:text-white">
+        Added features and workflows to the internal application, JARVIS
+       </p>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+
+<!-- Modals -->
+<div id="modal1" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden">
+    <div class="bg-white rounded-lg overflow-hidden shadow-lg w-11/12 md:w-1/2">
+        <div class="relative">
+            <button class="absolute top-0 right-0 m-4 text-black" onclick="closeModal('modal1')">&times;</button>
+            <div class="p-4">
+                <h3 class="text-xl font-bold mb-2">Project 1</h3>
+                <div class="flex space-x-4 overflow-x-auto">
+                    <img alt="Project 1 image 1" class="w-full h-64 object-cover" src="IMG_3314.jpg"/>
+                    <img alt="Project 1 image 2" class="w-full h-64 object-cover" src="IMG_3316.jpg"/>
+                    <img alt="Project 1 image 3" class="w-full h-64 object-cover" src="IMG_3317.jpg"/>
+                    <img alt="Project 1 image 4" class="w-full h-64 object-cover" src="IMG_3318.jpg"/>
+                    <img alt="Project 1 image 5" class="w-full h-64 object-cover" src="IMG_3319.jpg"/>
+                    <img alt="Project 1 image 6" class="w-full h-64 object-cover" src="IMG_3322.jpg"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal2" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden">
+    <div class="bg-white rounded-lg overflow-hidden shadow-lg w-11/12 md:w-1/2">
+        <div class="relative">
+            <button class="absolute top-0 right-0 m-4 text-black" onclick="closeModal('modal2')">&times;</button>
+            <div class="p-4">
+                <h3 class="text-xl font-bold mb-2">Project 2</h3>
+                <div class="flex space-x-4 overflow-x-auto">
+                    <img alt="Project 2 image 1" class="w-full h-64 object-cover" src="p8.jpg"/>
+                    <img alt="Project 2 image 2" class="w-full h-64 object-cover" src="p9.jpg"/>
+                    <img alt="Project 2 image 3" class="w-full h-64 object-cover" src="p10.jpg"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal3" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden">
+    <div class="bg-white rounded-lg overflow-hidden shadow-lg w-11/12 md:w-1/2">
+        <div class="relative">
+            <button class="absolute top-0 right-0 m-4 text-black" onclick="closeModal('modal3')">&times;</button>
+            <div class="p-4">
+                <h3 class="text-xl font-bold mb-2">Project 3</h3>
+                <div class="flex space-x-4 overflow-x-auto">
+                    <img alt="Project 3 image 1" class="w-full h-64 object-cover" src="f1.jpg"/>
+                    <img alt="Project 3 image 2" class="w-full h-64 object-cover" src="f2.jpg"/>
+                    <img alt="Project 3 image 3" class="w-full h-64 object-cover" src="f3.jpg"/>
+                    <img alt="Project 3 image 3" class="w-full h-64 object-cover" src="f4.jpg"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal4" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden">
+    <div class="bg-white rounded-lg overflow-hidden shadow-lg w-11/12 md:w-1/2">
+        <div class="relative">
+            <button class="absolute top-0 right-0 m-4 text-black" onclick="closeModal('modal4')">&times;</button>
+            <div class="p-4">
+                <h3 class="text-xl font-bold mb-2">Project 4</h3>
+                <div class="flex space-x-4 overflow-x-auto">
+                    <img alt="Project 4 image 1" class="w-full h-64 object-cover" src="jwf.jpg"/>
+                    <img alt="Project 4 image 2" class="w-full h-64 object-cover" src="jwire.jpg"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function openModal(modalId) {
+        document.getElementById(modalId).classList.remove('hidden');
+    }
+
+    function closeModal(modalId) {
+        document.getElementById(modalId).classList.add('hidden');
+    }
+</script>
+ </body>
+</html>
